@@ -2,6 +2,9 @@ const fs = require('fs')
 
 var logStream = fs.createWriteStream('recordings.csv', {'flags': 'a'});
 
+// Linux stty -F /dev/ttyUSB0 9600 raw
+// let serial = fs.createReadStream('/dev/ttyUSB0')
+
 let serial = fs.createReadStream('/dev/cu.wchusbserial1440')
 serial.on('data', (chunk) => {
     if(chunk.length > 13) {
