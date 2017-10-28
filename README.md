@@ -1,2 +1,2 @@
 # tp9605bt
-Tools to work with the Tekpower TP9606BT digital multimeter
+Tools to work with the Tekpower TP9605BT digital multimeter
